@@ -1,12 +1,13 @@
 package com.internship.springbootapplication.service;
 
+import com.internship.springbootapplication.model.dto.EmployeeDTO;
 import com.internship.springbootapplication.model.entity.Employee;
 
 import java.util.List;
 
 public interface EmployeeService {
 
-    List<Employee> retrieveAllEmployees();
+    List<EmployeeDTO> retrieveAllEmployees();
 
     List<Employee> retrieveEmployeesByFirstName(String firstName);
 

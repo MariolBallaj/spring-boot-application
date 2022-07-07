@@ -1,5 +1,6 @@
 package com.internship.springbootapplication.controller;
 
+import com.internship.springbootapplication.model.dto.EmployeeDTO;
 import com.internship.springbootapplication.model.entity.Employee;
 import com.internship.springbootapplication.service.EmployeeService;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,7 +26,7 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public List<Employee> findAll() {
+    public List<EmployeeDTO> findAll() {
         return employeeService.retrieveAllEmployees();
     }
 
